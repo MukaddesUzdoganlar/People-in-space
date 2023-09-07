@@ -22,7 +22,7 @@ async function fetchData() {
       filterBySpacecraft(data.people, "Tiangong")
     );
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error("Error can not load the page", error);
   }
 }
 
