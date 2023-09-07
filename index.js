@@ -4,7 +4,7 @@ const allButton = document.querySelector('[data-js="allButton"]');
 const issButton = document.querySelector('[data-js="issButton"]');
 const tiangongButton = document.querySelector('[data-js="tiangongButton"]');
 
-async function fetchData() {
+async function peopleInSpace() {
   try {
     const response = await fetch("http://api.open-notify.org/astros.json");
     const data = await response.json();
@@ -40,4 +40,4 @@ function filterBySpacecraft(people, spacecraft) {
   updatePeopleList(filteredPeople);
 }
 
-fetchData();
+peopleInSpace();
